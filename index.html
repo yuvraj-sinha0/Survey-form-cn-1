@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Survey Form</h1>
+        <p>
+            Feel free to answer the questions below based on your own experience and opinion. If you are not comfortable
+            answering a particular question, please skip it by selecting "Prefer not to say". Every answer would be very appreciated.
+            Thank you for your time.
+        </p>
+        <form class="survey-form" action="">
+            <div class="left-form">
+                <div class="form-field">
+                    <label for="name">
+                        <h4>Name</h4>
+                    </label>
+                    <input class="show-effect" id="name" type="text" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="email">
+                        <h4>Email</h4>
+                    </label>
+                    <input class="show-effect" id="email" type="email" placeholder="user@gmail.com">
+                </div>
+
+                <div class="form-field">
+                    <label for="mobile">
+                        <h4>Mobile</h4>
+                    </label>
+                    <input class="show-effect" id="mobile" type="tel" pattern="[0-9]{10}" maxlength="10" minlength="10" placeholder="Enter 10-digit mobile number" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="address">
+                        <h4>Location</h4>
+                    </label>
+                    <!-- <input class="show-effect" id="address" type="text" placeholder="Enter your address"> -->
+                     <select class="show-effect" name="" id="address" required>
+                        <option value="">Please Select Location</option>
+                        <option value="New Delhi">New Delhi</option>
+                        <option value="Kolkata">Kolkata</option>
+                        <option value="Patna">Patna</option>
+                        <option value="Indore">Indore</option>
+
+                     </select>
+                </div>
+
+                <div class="age-list-container">
+                    <h4>Age</h4>
+                    <div class="age-list">
+                        <div class="radio-field">
+                            <input type="radio" name="age" id="teenage" value="15-18" required>
+                            <label for="teenage">15-18</label>
+                        </div>
+                        <div class="radio-field">
+                            <input type="radio" name="age" id="twenties" value="21-30" required>
+                            <label for="twenties">21-30</label>
+                        </div>
+                        <div class="radio-field">
+                            <input type="radio" name="age" id="thirties" value="31-40" required>
+                            <label for="thirties">31-40</label>
+                        </div>
+                        <div class="radio-field">
+                            <input type="radio" name="age" id="forties" value="41-50" required>
+                            <label for="forties">41-50</label>
+                        </div>
+                        <div class="radio-field">
+                            <input type="radio" name="age" id="prefer-not-to-say" value="prefer-not-to-say" required>
+                            <label for="prefer-not-to-say">Prefer not to say</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <h4>How would you rate your proficiency in coding?</h4>
+                    <div class="radio-field">
+                        <input type="radio" name="proficiency" id="beginner" value="beginner" required>
+                        <label for="beginner">Beginner</label>
+                    </div>
+                    <div class="radio-field">
+                        <input type="radio" name="proficiency" id="intermediate" value="intermediate" required>
+                        <label for="intermediate">Intermediate</label>
+                    </div>
+                    <div class="radio-field">
+                        <input type="radio" name="proficiency" id="advanced" value="advanced" required>
+                        <label for="advanced">Advanced</label>
+                    </div>
+                </div>
+            </div>
+            <div class="right-form">
+                <div class="form-field">
+                    <h4>Have you ever participated in any coding contest?</h4>
+                    <div class="radio-field">
+                        <input type="radio" name="contest" id="yes" value="yes" required>
+                        <label for="yes">Yes</label>
+                    </div>
+                    <div class="radio-field">
+                        <input type="radio" name="contest" id="no" value="no" required>
+                        <label for="no">No</label>
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <label for="passion">
+                        <h4>Discuss what drives your passion for coding and outline your aspirations in the field</h4>
+                    </label>
+                    <textarea class="show-effect" id="passion" placeholder="Write about your passion for coding" required></textarea>
+                </div>
+
+                <div class="form-field">
+                    <label for="challenges">
+                        <h4>What are some of the challenges you face while coding?</h4>
+                    </label>
+                    <textarea class="show-effect" id="challenges" placeholder="Describe the challenges you face" required></textarea>
+                </div>
+
+                <div class="form-field">
+                    <label for="dsa">
+                        <h4>Please list the data structures you have a strong understanding of.</h4>
+                    </label>
+                    <textarea class="show-effect" id="dsa" placeholder="List the data structures you are proficient in" required></textarea>
+                </div>
+
+                <button class="submit-btn" type="submit">Submit Form</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
